@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import { PokemonContext } from '../context/PokemonContext'
 
 export const Navigation = () => {
+
+  const {} = useContext(PokemonContext)
+
   return (
     <>
 			<header className='container'>
